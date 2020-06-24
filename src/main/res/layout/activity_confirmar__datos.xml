@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Confirmar_Datos">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvlConfirmarDatos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confimar Datos"
+            android:textSize="30dp"
+            android:paddingHorizontal="100dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvlConfirmarDatos"
+            android:text="Un Nombre"/>
+        <LinearLayout
+            android:id="@+id/llDatosFechaNacimiento"
+            android:layout_below="@+id/tvNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvlFechaNacimiento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha Nacimiento: "/>
+
+            <TextView
+                android:id="@+id/tvFechaNacimiento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="123"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llDatosTelefono"
+            android:layout_below="@+id/llDatosFechaNacimiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvlTelefono"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tel: "/>
+
+            <TextView
+                android:id="@+id/tvTelefono"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="639374"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llDatosCorreo"
+            android:layout_below="@+id/llDatosTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvlCorreo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email: "/>
+
+            <TextView
+                android:id="@+id/tvCorreo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="dfjsdf@gmail.com"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llDatosDescripcion"
+            android:layout_below="@+id/llDatosCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvlDescripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Descripción: "/>
+
+            <TextView
+                android:id="@+id/tvDescripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="asdasd"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnBotonEditar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Editar Datos"
+            android:theme="@style/MiBotonRaised"
+            android:layout_below="@+id/llDatosDescripcion"
+            android:layout_centerHorizontal="true"
+            android:onClick="Regresarmain"/>
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

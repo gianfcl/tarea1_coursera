@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Tarea1_coursera</string>
+    <string name="strNombre">Nombre Completo</string>
+    <string name="strTelefono">Telefono</string>
+    <string name="strContacto">Email</string>
+    <string name="strDescripcion">Descripción Contacto</string>
+</resources>
